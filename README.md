@@ -1,20 +1,70 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+TutorSphere
+===========
 
-# Run and deploy your AI Studio app
+TutorSphere is a web application built with React and TypeScript, designed to provide a modern and responsive user experience.
 
-This contains everything you need to run your app locally.
+## Folder Structure
 
-View your app in AI Studio: https://ai.studio/apps/3ec88b09-0fb5-4b5b-b78f-95c3eedffa3b
+```
+├── index.html           # Main HTML file
+├── metadata.json        # Project metadata
+├── package.json         # Node.js dependencies and scripts
+├── README.md            # Project documentation
+├── server.ts            # Server entry point
+├── tsconfig.json        # TypeScript configuration
+├── vite.config.ts       # Vite build configuration
+└── src/
+    ├── App.tsx          # Main React component
+    ├── index.css        # Global styles
+    ├── main.tsx         # React app entry point
+    ├── types.ts         # TypeScript type definitions
+    └── services/
+        └── geminiService.ts # Example service module
+```
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v16 or higher recommended)
+
+### Setup Instructions
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:5173` (default Vite port).
+
+### Build for Production
+
+To build the app for production, run:
+
+```bash
+npm run build
+```
+
+## Project Structure Overview
+
+- **index.html**: The main HTML file loaded by Vite.
+- **server.ts**: Entry point for the backend server (if used).
+- **src/**: Contains all frontend source code.
+  - **App.tsx**: Main React component.
+  - **main.tsx**: Entry point for rendering the React app.
+  - **index.css**: Global CSS styles.
+  - **types.ts**: Shared TypeScript types.
+  - **services/**: Contains service modules for API calls and business logic.
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License.
